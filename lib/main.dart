@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:home_af_desktop/screens/home.dart';
 
 void main() {
   runApp(const HomeAFApp());
@@ -10,9 +11,10 @@ class HomeAFApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return const GetMaterialApp(
       title: 'HomeAppliancesFlutter',
-      home: Container(),
+      debugShowCheckedModeBanner: false,
+      home: HomeScreen(),
     );
   }
 }
