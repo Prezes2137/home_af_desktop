@@ -11,7 +11,7 @@ class HomeAFApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
+    return GetMaterialApp(
       title: 'HomeAppliancesFlutter',
       debugShowCheckedModeBanner: false,
       home: HomeScreen(),
