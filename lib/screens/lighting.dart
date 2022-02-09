@@ -30,11 +30,13 @@ class LightingScreen extends StatelessWidget {
           ListTile(
             title: const Text("Bedroom LED",
                 style: TextStyle(color: Colors.white)),
+            trailing: const Icon(Icons.chevron_right, color: Colors.white),
             onTap: () {},
           ),
           ListTile(
             title: const Text("Outdoor LED",
                 style: TextStyle(color: Colors.white)),
+            trailing: const Icon(Icons.chevron_right, color: Colors.white),
             onTap: () {},
           )
         ],
