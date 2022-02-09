@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class GridElement extends StatelessWidget {
-  const GridElement(this.title, this.icon, {Key? key}) : super(key: key);
+  const GridElement(this.title, this.icon, this.page, {Key? key})
+      : super(key: key);
 
   final String title;
   final IconData icon;
+  final dynamic page;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-        onTap: () {},
+        onTap: () => Get.to(page),
         child: Container(
             padding: const EdgeInsets.all(30),
             color: const Color.fromARGB(255, 14, 14, 14),

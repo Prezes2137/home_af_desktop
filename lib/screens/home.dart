@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:home_af_desktop/components/grid_element.dart';
 import 'package:home_af_desktop/controllers/home.dart';
 import 'package:home_af_desktop/disable.dart';
+import 'package:home_af_desktop/screens/lighting.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({Key? key}) : super(key: key);
@@ -20,10 +21,10 @@ class HomeScreen extends StatelessWidget {
           crossAxisSpacing: 10,
           crossAxisCount: 2,
           children: const [
-            GridElement('Lighting', Icons.lightbulb),
-            Disable(GridElement('Sound', Icons.speaker)),
-            GridElement('Roller blinds', Icons.window),
-            GridElement('Doors', Icons.door_front_door)
+            GridElement('Lighting', Icons.lightbulb, LightingScreen()),
+            Disable(GridElement('Sound', Icons.speaker, LightingScreen())),
+            GridElement('Roller blinds', Icons.window, LightingScreen()),
+            GridElement('Doors', Icons.door_front_door, LightingScreen())
           ],
         ),
       ),
