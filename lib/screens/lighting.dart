@@ -15,6 +15,30 @@ class LightingScreen extends StatelessWidget {
           IconButton(onPressed: () {}, icon: const Icon(Icons.add_circle))
         ],
       ),
+      body: ListView(
+        children: [
+          SwitchListTile(
+            title: const Text("Kitchen lights",
+                style: TextStyle(color: Colors.white)),
+            value: true,
+            onChanged: (val) {},
+            activeColor: Colors.white,
+            activeTrackColor: Colors.white38,
+            inactiveThumbColor: Colors.white38,
+            inactiveTrackColor: Colors.white10,
+          ),
+          ListTile(
+            title: const Text("Bedroom LED",
+                style: TextStyle(color: Colors.white)),
+            onTap: () {},
+          ),
+          ListTile(
+            title: const Text("Outdoor LED",
+                style: TextStyle(color: Colors.white)),
+            onTap: () {},
+          )
+        ],
+      ),
     );
   }
 }
