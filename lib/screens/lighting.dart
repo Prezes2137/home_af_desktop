@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:home_af_desktop/screens/add_lighting.dart';
 
 class LightingScreen extends StatelessWidget {
   const LightingScreen({Key? key}) : super(key: key);
@@ -12,7 +14,9 @@ class LightingScreen extends StatelessWidget {
         centerTitle: true,
         backgroundColor: const Color.fromARGB(255, 0, 0, 0),
         actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.add_circle))
+          IconButton(
+              onPressed: () => Get.to(AddLightingScreen()),
+              icon: const Icon(Icons.add_circle))
         ],
       ),
       body: ListView(
